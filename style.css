@@ -191,7 +191,8 @@ img {
 
 
 .addressWrap {
-    background-color: var(--ivory);
+    background: var(--ivory)url("img/bg-noise.png");
+    background-size: 100px 100px;
     padding: 40px 20px;
 }
     .titleAddress {
