@@ -63,6 +63,7 @@ body {
     background: var(--white) url("img/bg-noise.png");
     background-size: 100px 100px;
     color: var(--gray-770);
+    padding-bottom: 64px;
 }
 img {
     display: block;
@@ -88,6 +89,9 @@ img {
     color: var(--lime-700);
     font-size: 0.75rem;
     font-weight: 500;
+}
+.spacing24 {
+    height: 24px;
 }
 
 .headerWrap {
@@ -184,4 +188,54 @@ img.map {
 }
 .buttonContainer .boxBottonSolid {
     margin-bottom: 8px;
+}
+
+.howToGoContainer .label {
+    margin-bottom: 8px;
+}
+.howToGoContainer .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    color: var(--gray-650);
+}
+.howToGoContainer .row .left {
+    width: 100px;
+}
+.howToGoContainer .row .right {
+    flex: 1;
+}
+.howToGoContainer .row.info {
+    align-items: center;
+}
+.howToGoContainer .row .icInfo {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.galleryContainer {
+    padding: 40px 20px;
+}
+.titleGallery {
+    width: 60px;
+    height: 32px;
+    margin-bottom: 24px;
+}
+.gridContainer {
+    display: grid;
+    column-gap: 12px;
+    row-gap: 12px;
+    grid-template-columns: auto auto;
+    margin-bottom: 24px;
+}
+.gridItem {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.gridItem img {
+    width: 100%;
+    height: auto;
 }
