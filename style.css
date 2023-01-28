@@ -8,15 +8,30 @@
 }
 
 /* Text Elements */
-h1,h2 {
-    margin: 2rem;
+.text16 {
+    font-size: 1em;
+    line-height: 1.5;
 }
-h1 {
-    font-size: 1.7em;
-    margin-bottom: 20px;
+.text14 {
+    font-size: 0.875em;
+    line-height: 1.5;
 }
+.text12 {
+    font-size: 0.75em;
+    line-height: 1.4;
+}
+.textRegular {
+    font-weight: 400;
+}
+.textMedium {
+    font-weight: 500;
+}
+.textBold {
+    font-weight: 700;
+}
+
 p {
-    line-height:1.8;
+    line-height:1.5;
     margin-bottom: 10px;
 }
 
@@ -25,8 +40,26 @@ a {
 }
 /* Typography */
 
+/* Color */
+:root {
+--gray-900: #262222;
+--gray-770: #383838;
+--gray-650: #616161;
+--gray-500: #949494;
+--gray-400: #B7B7B7;
+--gray-300: #DFDFDF;
+--gray-250: #E8E8E8;
+--gray-150: #F5F5F5;
+--ivory: #FAF7F0;
+--lime-750: #438643;
+--lime-700: #3D9E43;
+--white: #FFFFFF;
+  }
+/* Color */
+
 /* Content Elements */
 body {
-    background: #fff url("img/bg-noise.png");
-    color: #383838;
+    background: var(--lime-700) url("img/bg-noise.png");
+    background-size: 100px 100px;
+    color: var(--gray-770);
 }
