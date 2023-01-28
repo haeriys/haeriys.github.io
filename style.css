@@ -206,10 +206,10 @@ img.map {
     font-weight: 400;
 }
 .howToGoContainer .row .left {
-    flex-basis: 100px;
+    flex: 2;
 }
 .howToGoContainer .row .right {
-    flex: 1;
+    flex: 5;
 }
 .howToGoContainer .row.info {
     align-items: center;
