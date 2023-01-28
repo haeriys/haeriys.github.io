@@ -280,7 +280,7 @@ img {
                 column-gap: 12px;
         row-gap: 12px;
         -ms-grid-columns: auto 12px auto;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         margin-bottom: 24px;
     }
     .gridItem {
