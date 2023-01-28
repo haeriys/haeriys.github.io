@@ -32,7 +32,7 @@
 
 p {
     line-height:1.5;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 a {
@@ -59,7 +59,7 @@ a {
 
 /* Content Elements */
 body {
-    background: var(--lime-700) url("img/bg-noise.png");
+    background: var(--white) url("img/bg-noise.png");
     background-size: 100px 100px;
     color: var(--gray-770);
 }
