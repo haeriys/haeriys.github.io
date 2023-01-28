@@ -236,7 +236,6 @@ img.map {
     margin-bottom: 24px;
 }
 .gridItem {
-    height: 200px;
     overflow: hidden;
     display: flex;
     align-items: center;
