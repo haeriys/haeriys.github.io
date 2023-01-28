@@ -2,7 +2,8 @@
     word-break: keep-all;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font: -apple-system-body;
     font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -73,9 +74,15 @@ img {
     display: block;
 }
 .boxBottonSolid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 12px;
     border-radius: 6px;
     background-color: var(--lime-750);
@@ -84,9 +91,15 @@ img {
     font-weight: 500;
 }
 .boxBottonOutline {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 12px;
     border-radius: 6px;
     border: 1px solid var(--lime-700);
@@ -138,19 +151,33 @@ img {
 
 .parentContainer {
     padding: 64px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
     .parentContainer .row {
         margin-bottom: 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     .parentContainer .row:nth-child(2) {
         margin-bottom: 0;
     }
     .parentName {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         color: var(--gray-650);
         margin-right: 12px;
@@ -199,25 +226,36 @@ img {
         margin-bottom: 8px;
     }
     .howToGoContainer .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         margin-bottom: 8px;
         color: var(--gray-650);
         font-size: 0.75rem;
         font-weight: 400;
     }
     .howToGoContainer .row .left {
-        flex: 2;
+        -webkit-box-flex: 2;
+            -ms-flex: 2;
+                flex: 2;
         font-size: 0.75rem;
         font-weight: 400;
     }
     .howToGoContainer .row .right {
-        flex: 5;
+        -webkit-box-flex: 5;
+            -ms-flex: 5;
+                flex: 5;
         font-size: 0.75rem;
         font-weight: 400;
     }
     .howToGoContainer .row.info {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .howToGoContainer .row .icInfo {
         width: 12px;
@@ -234,16 +272,24 @@ img {
         margin-bottom: 24px;
     }
     .gridContainer {
+        display: -ms-grid;
         display: grid;
-        column-gap: 12px;
+        -webkit-column-gap: 12px;
+           -moz-column-gap: 12px;
+                column-gap: 12px;
         row-gap: 12px;
+        -ms-grid-columns: auto 12px auto;
         grid-template-columns: auto auto;
         margin-bottom: 24px;
     }
     .gridItem {
         overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .gridItem img {
         width: 100%;
