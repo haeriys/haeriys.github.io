@@ -124,6 +124,7 @@ img {
     .invitationTextContainer p {
         color: var(--gray-650);
         margin-bottom: 20px;
+        line-height: 1.7;
     }
     .invitationTextContainer p:last-child {
         margin-bottom: 0;
@@ -166,85 +167,87 @@ img {
     background-color: var(--ivory);
     padding: 40px 20px;
 }
-.titleAddress {
-    width: 86px;
-    height: 32px;
-    margin-bottom: 24px;
-}
-p.address {
-    color: var(--gray-650);
-    margin-bottom: 4px;
-}
-p.tel {
-    color: var(--gray-500);
-    margin-bottom: 24px;
-}
-img.map {
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--gray-250);
-    border-radius: 8px;
-    margin-bottom: 24px;
-}
+    .titleAddress {
+        width: 86px;
+        height: 32px;
+        margin-bottom: 24px;
+    }
+    p.address {
+        color: var(--gray-650);
+        margin-bottom: 4px;
+    }
+    p.tel {
+        color: var(--gray-500);
+        margin-bottom: 24px;
+    }
+    img.map {
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--gray-250);
+        border-radius: 8px;
+        margin-bottom: 24px;
+    }
 
-.buttonContainer {
-    margin-bottom: 24px;
-}
-.buttonContainer .boxBottonSolid {
-    margin-bottom: 8px;
-}
+    .buttonContainer {
+        margin-bottom: 24px;
+    }
+    .buttonContainer .boxBottonSolid {
+        margin-bottom: 8px;
+    }
 
-.howToGoContainer .label {
-    margin-bottom: 8px;
-}
-.howToGoContainer .row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-    color: var(--gray-650);
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-.howToGoContainer .row .left {
-    flex: 2;
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-.howToGoContainer .row .right {
-    flex: 5;
-    font-size: 0.75rem;
-    font-weight: 400;
-}
-.howToGoContainer .row.info {
-    align-items: center;
-}
-.howToGoContainer .row .icInfo {
-    width: 12px;
-    height: 12px;
-    margin-right: 4px;
-}
+    .howToGoContainer .label {
+        margin-bottom: 8px;
+    }
+    .howToGoContainer .row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+        color: var(--gray-650);
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row .left {
+        flex: 2;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row .right {
+        flex: 5;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+    .howToGoContainer .row.info {
+        align-items: center;
+    }
+    .howToGoContainer .row .icInfo {
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+    }
 
 .galleryContainer {
     padding: 40px 20px;
 }
-.titleGallery {
-    width: 60px;
-    height: 32px;
-    margin-bottom: 24px;
-}
-.gridContainer {
-    display: grid;
-    column-gap: 12px;
-    row-gap: 12px;
-    grid-template-columns: auto auto;
-    margin-bottom: 24px;
-}
-.gridItem {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-.gridItem img {
-    width: 100%;
-    height: auto;
-}
+    .titleGallery {
+        width: 60px;
+        height: 32px;
+        margin-bottom: 24px;
+    }
+    .gridContainer {
+        display: grid;
+        column-gap: 12px;
+        row-gap: 12px;
+        grid-template-columns: auto auto;
+        margin-bottom: 24px;
+    }
+    .gridItem {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .gridItem img {
+        width: 100%;
+        height: auto;
+    }
+
+/* Content Elements */
