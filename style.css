@@ -206,7 +206,7 @@ img.map {
     font-weight: 400;
 }
 .howToGoContainer .row .left {
-    width: 100px;
+    flex-basis: 100px;
 }
 .howToGoContainer .row .right {
     flex: 1;
