@@ -21,7 +21,7 @@
     line-height: 1.4;
 }
 .textRegular {
-    font-weight: 400;
+    font-weight: 300;
 }
 .textMedium {
     font-weight: 500;
@@ -63,3 +63,25 @@ body {
     background-size: 100px 100px;
     color: var(--gray-770);
 }
+img {
+    display: block;
+}
+
+.headerWrap {
+    padding: 32px 20px;
+}
+    .titleMain {
+        width: 182px;
+        height: 64px;
+        margin-bottom: 24px;
+    }
+    .headerWrap p {
+        color: var(--lime-750);
+    }
+.imgContainer {
+    position:relative;
+}
+    .photoIntro {
+        width:100%;
+        height: auto;
+    }
