@@ -64,7 +64,6 @@ body {
     background: var(--white) url("img/bg-noise.png");
     background-size: 100px 100px;
     color: var(--gray-770);
-    padding-bottom: 64px;
 }
 .pageWrap {
     max-width: 440px;
@@ -193,7 +192,7 @@ img {
 .addressWrap {
     background: var(--ivory)url("img/bg-noise.png");
     background-size: 100px 100px;
-    padding: 40px 20px;
+    padding: 40px 20px 64px 20px;
 }
     .titleAddress {
         width: 86px;
@@ -265,7 +264,7 @@ img {
     }
 
 .galleryContainer {
-    padding: 40px 20px;
+    padding: 40px 20px 64px 20px;
 }
     .titleGallery {
         width: 60px;
