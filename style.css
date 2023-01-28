@@ -21,7 +21,7 @@
     line-height: 1.4;
 }
 .textRegular {
-    font-weight: 300;
+    font-weight: 400;
 }
 .textMedium {
     font-weight: 500;
@@ -37,6 +37,7 @@ p {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 /* Typography */
 
@@ -66,6 +67,28 @@ body {
 img {
     display: block;
 }
+.boxBottonSolid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--lime-750);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.boxBottonOutline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--lime-700);
+    color: var(--lime-700);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
 
 .headerWrap {
     padding: 32px 20px;
@@ -78,6 +101,7 @@ img {
     .headerWrap p {
         color: var(--lime-750);
     }
+
 .imgContainer {
     position:relative;
 }
@@ -85,3 +109,79 @@ img {
         width:100%;
         height: auto;
     }
+
+.invitationTextContainer {
+    padding: 40px 20px 64px 20px;
+}
+    .invitationTextContainer p {
+        color: var(--gray-650);
+        margin-bottom: 20px;
+    }
+    .invitationTextContainer p:last-child {
+        margin-bottom: 0;
+    }
+
+.divider {
+    margin: 0 160px;
+    height: 1px;
+    background-color: var(--gray-250);
+}
+
+.parentContainer {
+    padding: 64px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .parentContainer .row {
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: row;
+    }
+    .parentContainer .row:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .parentName {
+        display: flex;
+        color: var(--gray-650);
+        margin-right: 12px;
+    }
+    .parentContainer .row:nth-child(2) .parentName {
+        margin-right: 26px;
+    }
+    .childName {
+        color: var(--lime-750);
+    }
+
+
+.addressWrap {
+    background-color: var(--ivory);
+    padding: 40px 20px;
+}
+.titleAddress {
+    width: 86px;
+    height: 32px;
+    margin-bottom: 24px;
+}
+p.address {
+    color: var(--gray-650);
+    margin-bottom: 4px;
+}
+p.tel {
+    color: var(--gray-500);
+    margin-bottom: 24px;
+}
+img.map {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--gray-250);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.buttonContainer {
+    margin-bottom: 24px;
+}
+.buttonContainer .boxBottonSolid {
+    margin-bottom: 8px;
+}
