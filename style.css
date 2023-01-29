@@ -290,7 +290,6 @@ img {
         row-gap: 12px;
         -ms-grid-columns: auto 12px auto 12px auto;
         grid-template-columns: auto auto auto;
-        margin-bottom: 24px;
     }
     .gridItem {
         overflow: hidden;
