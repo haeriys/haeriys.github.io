@@ -191,6 +191,14 @@ img {
     }
 
 
+.calendarContainer {
+    padding: 0 32px 64px 32px;
+}
+.calendarContainer img.calendar {
+    width: 100%;
+    height: auto;
+}
+
 .addressWrap {
     background: var(--ivory)url("img/bg-noise.png");
     background-size: 100px 100px;
