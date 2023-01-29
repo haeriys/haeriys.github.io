@@ -124,10 +124,12 @@ img {
 
 .imgContainer {
     position:relative;
+    padding: 0 20px;
 }
     .photoIntro {
         width:100%;
         height: auto;
+        border-radius: 6px;
     }
 
 .invitationTextContainer {
