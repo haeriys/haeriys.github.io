@@ -121,52 +121,8 @@
 <button id="myButton1">복사</button>
 <div id="myDiv2">우리은행 1002-734-614690 조영수</div>
 <button id="myButton2">복사</button>
-<script>
-    // div 취득
-    const myDiv1 = document.getElementById("myDiv1");
-	const myDiv2 = document.getElementById("myDiv2");
-
-    // button 클릭 이벤트
-    document.getElementById("myButton1").onclick = () => {
-      // div의 내용(textContent)을 복사한다.
-      window.navigator.clipboard.writeText(myDiv1.textContent).then(() => {
-        // 복사가 완료되면 호출된다.
-        alert("복사완료");
-      });
-    };
-	// button 클릭 이벤트
-    document.getElementById("myButton2").onclick = () => {
-      // div의 내용(textContent)을 복사한다.
-      window.navigator.clipboard.writeText(myDiv2.textContent).then(() => {
-        // 복사가 완료되면 호출된다.
-        alert("복사완료");
-      });
-    };
-  </script>
-<!-- <div style="padding: 40px 0;">
-	<input type="text" value="국민은행 699202-01-188536 전영선" id="myInput1">
-
-	<div class="tooltip">
-	<button onclick="myFunction1()" onmouseout="outFunc1()">
-	  <span class="tooltiptext" id="myTooltip1">클립보드에 복사하기</span>
-	  복사
-	  </button>
-	</div>
-
-</div>
-<div style="padding: 40px 0;">
-	<input type="text" value="우리은행 1002-734-614690 조영수" id="myInput2">
-
-	<div class="tooltip">
-	<button onclick="myFunction2()" onmouseout="outFunc2()">
-	  <span class="tooltiptext" id="myTooltip2">클립보드에 복사하기</span>
-	  복사
-	  </button>
-	</div>
-</div> -->
 
 
-  
 <!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
 <span class="close cursor" onclick="closeModal()">&times;</span>

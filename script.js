@@ -40,30 +40,23 @@ function showSlides(n) {
 }
 
 // 계좌번호 복사
-// function myFunction1() {
-//   var copyText1 = document.getElementById("myInput1");
-//   copyText1.select();
-//   copyText1.setSelectionRange(0, 99999);
-//   navigator.clipboard.writeText(copyText1.value);
-  
-//   var tooltip1 = document.getElementById("myTooltip1");
-//   tooltip1.innerHTML = "복사되었습니다";
-// }
-// function myFunction2() {
-//   var copyText2 = document.getElementById("myInput2");
-//   copyText2.select();
-//   copyText2.setSelectionRange(0, 99999);
-//   navigator.clipboard.writeText(copyText2.value);
-  
-//   var tooltip2 = document.getElementById("myTooltip2");
-//   tooltip2.innerHTML = "복사되었습니다";
-// }
+// div 취득
+const myDiv1 = document.getElementById("myDiv1");
+const myDiv2 = document.getElementById("myDiv2");
 
-// function outFunc1() {
-//   var tooltip1 = document.getElementById("myTooltip1");
-//   tooltip1.innerHTML = "클립보드에 복사하기";
-// }
-// function outFunc2() {
-//   var tooltip2 = document.getElementById("myTooltip2");
-//   tooltip2.innerHTML = "클립보드에 복사하기";
-// }
+// button 클릭 이벤트
+document.getElementById("myButton1").onclick = () => {
+	// div의 내용(textContent)을 복사한다.
+	window.navigator.clipboard.writeText(myDiv1.textContent).then(() => {
+	// 복사가 완료되면 호출된다.
+	alert("복사완료");
+	});
+};
+// button 클릭 이벤트
+document.getElementById("myButton2").onclick = () => {
+	// div의 내용(textContent)을 복사한다.
+	window.navigator.clipboard.writeText(myDiv2.textContent).then(() => {
+	// 복사가 완료되면 호출된다.
+	alert("복사완료");
+	});
+};
