@@ -39,24 +39,36 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-// 계좌번호 복사
-// div 취득
-const myDiv1 = document.getElementById("myDiv1");
-const myDiv2 = document.getElementById("myDiv2");
+// toggle show hide button
+function triggerAccountGroom() {
+  var x = document.getElementById("accountGroom");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function triggerAccountBride() {
+  var x = document.getElementById("accountBride");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-// button 클릭 이벤트
-document.getElementById("myButton1").onclick = () => {
-	// div의 내용(textContent)을 복사한다.
-	window.navigator.clipboard.writeText(myDiv1.textContent).then(() => {
-	// 복사가 완료되면 호출된다.
-	alert("복사완료");
-	});
-};
-// button 클릭 이벤트
-document.getElementById("myButton2").onclick = () => {
-	// div의 내용(textContent)을 복사한다.
-	window.navigator.clipboard.writeText(myDiv2.textContent).then(() => {
-	// 복사가 완료되면 호출된다.
-	alert("복사완료");
-	});
-};
+// 계좌복사
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("복사되었습니다. " + copyText.value);
+}

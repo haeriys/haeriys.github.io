@@ -52,7 +52,8 @@ a {
 --gray-300: #DFDFDF;
 --gray-250: #E8E8E8;
 --gray-150: #F5F5F5;
---ivory: #FAF7F0;
+--ivory-150: #FAF4E6;
+--ivory-100: #FAF7F0;
 --lime-750: #438643;
 --lime-700: #3D9E43;
 --white: #FFFFFF;
@@ -72,7 +73,7 @@ body {
 img {
     display: block;
 }
-.boxBottonSolid {
+.boxButtonSolid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -89,7 +90,7 @@ img {
     font-size: 0.75rem;
     font-weight: 500;
 }
-.boxBottonOutline {
+.boxButtonOutline {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -106,6 +107,35 @@ img {
     font-size: 0.75rem;
     font-weight: 500;
 }
+.boxButtonSolidToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: var(--ivory-150);
+    color: var(--lime-750);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.boxButtonOutlineSmall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 6px;
+    border-radius: 3px;
+    border: 1px solid var(--lime-700);
+    color: var(--lime-700);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .spacing24 {
     height: 24px;
 }
@@ -200,7 +230,7 @@ img {
 }
 
 .addressWrap {
-    background: var(--ivory)url("img/bg-noise.png");
+    background: var(--ivory-100)url("img/bg-noise.png");
     background-size: 100px 100px;
     padding: 64px 20px;
 }
@@ -228,7 +258,7 @@ img {
     .buttonContainer {
         margin-bottom: 40px;
     }
-    .buttonContainer .boxBottonOutline {
+    .buttonContainer .boxButtonOutline {
         margin-bottom: 8px;
     }
 
@@ -307,47 +337,25 @@ img {
         height: auto;
     }
 
+.accountNumberContainer {
+    padding: 40px 20px 64px 20px;
+}
+.accountNumberContainer .titleAccount {
+    width: 132px;
+    height: 32px;
+    margin-bottom: 40px;
+}
+.bankAccountItem {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
 /* Content Elements */
-
-
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
 
 
 

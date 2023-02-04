@@ -83,8 +83,8 @@
 	<p class="text14 textRegular tel">02-730-0230</p>
 	<img src="img/map.jpg" class="map" alt="지도">
 	<div class="buttonContainer">
-		<a href="https://naver.me/FYuIvnpo" class="boxBottonOutline">네이버 지도</a>
-		<a href="https://place.map.kakao.com/20000428" class="boxBottonOutline">카카오 지도</a>
+		<a href="https://naver.me/FYuIvnpo" class="boxButtonOutline">네이버 지도</a>
+		<a href="https://place.map.kakao.com/20000428" class="boxButtonOutline">카카오 지도</a>
 	</div>
 	<div class="howToGoContainer">
 		<p class="text12 textMedium label">지하철</p>
@@ -116,12 +116,44 @@
 	</div>
 </div>
 
-<!-- 계좌번호 복사 -->
-<div id="myDiv1">국민은행 699202-01-188536 전영선</div>
-<button id="myButton1">복사</button>
-<div id="myDiv2">우리은행 1002-734-614690 조영수</div>
-<button id="myButton2">복사</button>
 
+<!-- The text field -->
+<input type="text" value="69920201188536" id="myInput">
+
+<!-- The button used to copy the text -->
+<button onclick="myFunction()">Copy text</button>
+
+
+<!-- Bank Account Number -->
+<div class="accountNumberContainer">
+	<img src="img/title-account.png" class="titleAccount" alt="마음 전하실 곳">
+	<div class="bankAccountItem">
+		<div class="boxButtonSolidToggle" onclick="triggerAccountGroom()">신랑측 계좌번호</div>
+		<div class="toggleContents" id="accountGroom" style="display: none;">
+			<div class="toggleRow">
+				<div id="">국민은행 699202-01-188536 전영선</div>
+				<button id="">복사</button>
+			</div>
+			<div class="toggleRow">
+				<div id="">우리은행 1002-734-614690 조영수</div>
+				<button id="">복사</button>
+			</div>
+		</div>
+	</div>
+	<div class="bankAccountItem">
+		<div class="boxButtonSolidToggle" onclick="triggerAccountBride()">신부측 계좌번호</div>
+		<div class="toggleContents" id="accountBride" style="display: none;">
+			<div class="toggleRow">
+				<div id="accountNo3">신한은행 110-017-957144 조경환</div>
+				<button id="copyButton3">복사</button>
+			</div>
+			<div class="toggleRow">
+				<div id="accountNo4">신한은행 110-206-730039 엄해리</div>
+				<button id="copyButton4">복사</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
