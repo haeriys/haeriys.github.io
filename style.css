@@ -89,6 +89,7 @@ img {
     color: var(--white);
     font-size: 0.75rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .boxButtonOutline {
     display: -webkit-box;
@@ -123,6 +124,7 @@ img {
     color: var(--lime-750);
     font-size: 0.75rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .boxButtonOutlineSmall {
     display: inline-block;
@@ -134,6 +136,7 @@ img {
     color: var(--lime-700);
     font-size: 0.75rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .spacing24 {
