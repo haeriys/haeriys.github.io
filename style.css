@@ -40,7 +40,7 @@ a {
     color: inherit;
     text-decoration: none;
 }
-/* Typography */
+/* Text Elements */
 
 /* Color */
 :root {
@@ -343,45 +343,47 @@ img {
 .accountNumberContainer {
     padding: 40px 20px 64px 20px;
 }
-.accountNumberContainer .titleAccount {
-    width: 132px;
-    height: 32px;
-    margin-bottom: 40px;
-}
-.bankAccountItem {
-    margin-bottom: 8px;
-    border:1px solid var(--ivory-150);
-    border-radius: 6px;
-    overflow: hidden;
-}
-.toggleContents {
-    padding: 16px;
-}
-.toggleContents .toggleRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.toggleContents .toggleRow .label {
-    flex: 1;
-    color: var(--gray-650);
-}
-.toggleContents .toggleRowDivder {
-    height: 1px;
-    margin: 16px 0;
-    background: var(--ivory-150);
-}
-
-
-
-
-
-
-
+    .accountNumberContainer .titleAccount {
+        width: 132px;
+        height: 32px;
+        margin-bottom: 40px;
+    }
+    .bankAccountItem {
+        margin-bottom: 8px;
+        border:1px solid var(--ivory-150);
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .toggleContents {
+        padding: 16px;
+    }
+    .toggleContents .toggleRow {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .toggleContents .toggleRow .label {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        color: var(--gray-650);
+    }
+    .toggleContents .toggleRowDivder {
+        height: 1px;
+        margin: 16px 0;
+        background: var(--ivory-150);
+    }
 /* Content Elements */
 
 
-
+/* Gallery Modal Elements */
 /* The Modal (background) */
 .modal {
 display: none;
@@ -426,9 +428,9 @@ cursor: pointer;
 
 /* Hide the slides by default */
 .mySlides {
-display: none;
-border-radius: 3px;
-overflow: hidden;
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .mySlides img {
@@ -438,67 +440,68 @@ overflow: hidden;
 /* Next & previous buttons */
 .prev,
 .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -50px;
-color: white;
-font-weight: bold;
-font-size: 20px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
--webkit-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px 8px 0;
-position: absolute;
-top: -32px;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px 8px 0;
+    position: absolute;
+    top: -32px;
 }
 
 /* Caption text */
 .caption-container {
-text-align: center;
-padding: 2px 16px;
-min-height: 12px;
-color: white;
+    text-align: center;
+    padding: 2px 16px;
+    min-height: 12px;
+    color: white;
 }
 .column {
   float: left;
   width: calc(100% / 12);
 }
 img.demo {
-opacity: 0.6;
-width: 100%;
+    opacity: 0.6;
+    width: 100%;
 }
 
 .active,
 .demo:hover {
-opacity: 1;
+    opacity: 1;
 }
 
 img.hover-shadow {
-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .hover-shadow:hover {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* Gallery Modal Elements */
