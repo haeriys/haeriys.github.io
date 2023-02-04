@@ -119,7 +119,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 12px;
-    border-radius: 6px;
     background-color: var(--ivory-150);
     color: var(--lime-750);
     font-size: 0.75rem;
